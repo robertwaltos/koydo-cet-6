@@ -1,0 +1,45 @@
+// CET-6 Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM072",
+  slug: "cet-6",
+  name: "CET-6",
+  fullName: "College English Test Band 6",
+  alias: "College English Test Band 6",
+  family: "CET",
+  category: "Language proficiency",
+  subcategory: "University English benchmark",
+  country: "China",
+  region: "East Asia",
+  languages: ["Chinese interface + English content"],
+  estimatedAnnualTakers: "very large",
+  testingWindow: "Jun/Dec",
+  schedulePattern: "2 times/year",
+  ageGroup: "18-24",
+  targetUser: "University student",
+  delivery: "Paper/computer",
+  questionTypes: ["Listening","reading","translation","writing"],
+  adaptivity: "Linear",
+  sections: "4 sections",
+  scoringMode: "425 threshold culture",
+  essayOrSpeaking: "Writing",
+  ipRisk: "Medium",
+  contentReuse: "language_reading_listening_writing",
+  uiEngine: "paper_language_mixed",
+  monetizationPotential: "High",
+  tier: "Tier 3",
+  launchWave: "Wave 5",
+  themeColor: "#059669",
+  themeColorDark: "#047857",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
